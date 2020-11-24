@@ -20,11 +20,11 @@ CharacterAmountRange.addEventListener("input" , syncCharacterAmount)
 
 form.addEventListener("submit", e => {
     e.preventDefault()
-    var characterAmount = characterAmountNumber.value
+    var characterAmount = CharacterAmountNumber.value
     var includeSymbols = IncludeSymbolsElement.checked
-    var includeNumbers = IncludeNumbersElement.checked
+    var includeNumber = IncludeNumbersElement.checked
     var includeUppercase = IncludeUppercaseElement.checked
-    var password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
+    var password = generatePassword(characterAmount, includeUppercase, includeNumber, includeSymbols)
     passwordDisplay.innerText = password
 });
 
@@ -56,5 +56,10 @@ function syncCharacterAmount(e) {
     CharacterAmountNumber.value = value
     CharacterAmountRange.value = value
 }
+
+function syncCharacterRange(e) {
+    var value = e.target.value
+    CharacterAmountNumber.value = value
+    CharacterAmountRange.value = value}
 
 
