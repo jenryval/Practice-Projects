@@ -1,3 +1,6 @@
+// video from class 4.2 events and event handling!! 
+
+
 // DOM ELEMENTS
 var expenseName = $(document).get("expenseName")
 var submitBTN = $(document).get("submitBTN")
