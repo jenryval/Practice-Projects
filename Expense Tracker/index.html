@@ -10,16 +10,6 @@
 </head>
 <body>
     <h1>Your budget</h1>
-    <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Choose Type of Expense
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Personal Expense</a>
-          <a class="dropdown-item" href="#">Bills</a>
-          <a class="dropdown-item" href="#">Miscellaneous</a>
-        </div>
-      </div>
       <hr>
       <div class="expense-container">
           <div class ="form">
@@ -28,10 +18,10 @@
             <div class="input-group mb-3">
               <div class="input-group-prepend">
               </div>
-              <input type="text" class="form-control" placeholder="Expense Description" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input id="expenseName" type="text" class="form-control" placeholder="Expense Description" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Value" aria-label="Dollar amount (with dot and two decimal places)">
+              <input id="value" type="text" class="form-control" placeholder="Value" aria-label="Dollar amount (with dot and two decimal places)">
               <div class="input-group-append">
                 <span class="input-group-text">$</span>
                 <span class="input-group-text">0.00</span>
@@ -40,6 +30,7 @@
     </div>
 </div>
 <button id="submitBTN" type="button" class="btn btn-primary btn-md">Submit Transaction</button>
+
 
         
 
